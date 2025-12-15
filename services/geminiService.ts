@@ -6,7 +6,7 @@ import { getProductDetails, PRODUCT_CATALOG } from './productDatabase'; // Impor
 
 // Initialize Gemini Client
 const ai = new GoogleGenAI({ 
-  apiKey: import.meta.env.VITE_GEMINI_API_KEY 
+  apiKey: process.env.API_KEY  // ✅ 你的 vite.config 有 define 這個
 });
 
 // --- PROMPT CONSTANTS (Refactored for readability) ---
